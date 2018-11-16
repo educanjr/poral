@@ -1,0 +1,208 @@
+/*
+Theme Name: Poral B2B
+Theme URI: https://poralsaci.com/
+Author: CoDigital (AkumA)
+Author URI: https://www.codigital.com.ar/
+Description: Theme for B2B shop for Poral
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: poralb2b
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+#wpadminbar{
+    display: none !important;
+}
+html {
+    margin-top: 0 !important;
+}
+html {
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.73;
+    -webkit-text-size-adjust: 100%;
+    background: #fff;
+    color: #4F5260;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background: #FF4870;
+}
+
+.uk-navbar-toggle, .uk-navbar-toggle:hover{
+    color: #fff;
+}
+
+.uk-button{
+    font-family: Raleway;
+    font-size: 11px;
+    transition-property: color,background-color,background-position,border-color,box-shadow;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    border-radius: 500px;
+    background-origin: border-box;
+}
+.uk-button-text {
+    line-height: 1.73;
+    color: #292C3D;
+    z-index: 0;
+}
+.uk-button-text::before {
+    z-index: -1;
+    border-bottom: 1px solid currentColor;
+}
+
+.uk-navbar {
+    display: flex;
+    position: relative;
+}
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #1D537E;
+}
+
+.tm-page {
+    position: relative;
+}
+.tm-toolbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #1D537E;
+    font-size: 11px;
+    border-bottom: 1px solid #fff;
+}
+.tm-toolbar{
+    color: rgba(255,255,255,.7);
+}
+
+.tm-toolbar .uk-first-column{
+    padding-right: 15px;
+    border-right: 1px solid #fff;
+}
+
+.tm-toolbar .uk-second-column{
+    padding-left: 15px;
+}
+
+.tm-toolbar .uk-button-text{
+    color: #fff;
+
+}
+.tm-toolbar a{
+    color: #fff;
+}
+
+.tm-header .uk-offcanvas-bar .uk-nav-default .uk-nav-divider{
+    border-top-color: rgba(75, 75, 75, .5);
+}
+.tm-header .uk-offcanvas-bar{
+    background: #fff;
+}
+.tm-header .uk-nav-default>li.uk-active,
+.tm-header .uk-nav-default>li.uk-active>a,
+.tm-header .uk-nav-default>li:hover,
+.tm-header .uk-nav-default>li>a:hover{
+    color: #1D537E;
+    font-family: Raleway;
+    font-size: 14px;
+    transition-property: color,background-color,background-position,border-color,box-shadow;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    border-radius: 500px;
+    background-origin: border-box;
+}
+
+.tm-header .uk-nav-default>li.uk-active:hover,
+.tm-header .uk-nav-default>li.uk-active>a:hover,
+.tm-header .uk-nav-default>li,
+.tm-header .uk-nav-default>li>a,
+.tm-header .uk-nav-default>li .uk-nav-sub>li>a,
+.tm-header .uk-nav-default>li .uk-nav-sub>li{
+    color: #4B4B4B;
+    font-family: Raleway;
+    font-size: 14px;
+    transition-property: color,background-color,background-position,border-color,box-shadow;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    border-radius: 500px;
+    background-origin: border-box;
+}
+
+.tm-header .uk-nav-default>li .uk-nav-sub>li>a,
+.tm-header .uk-nav-default>li .uk-nav-sub>li{
+    font-size: 12px;
+    font-weight: 500;
+}
+.tm-header .uk-nav-default>li .uk-nav-sub>li>a:hover,
+.tm-header .uk-nav-default>li .uk-nav-sub>li:hover{
+    color: #1D537E;
+}
+
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+    font-size: 14px;
+    font-family: Raleway;
+}
+.uk-navbar-nav>li>a{
+    color: #fff;
+}
+[class*=uk-navbar-dropdown-bottom] {
+    margin-top: 0;
+}
+.uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a.uk-open, .uk-navbar-nav>li>a:focus {
+    color: #fff;
+}
+.uk-navbar-nav>li.uk-active>a {
+    color: #fff;
+}
+
+.uk-button{
+    border-radius: 0;
+}
+
+#ps_categories .uk-position-bottom{
+    bottom: 15px;
+}
+
+#ps_categories .uk-overlay-primary {
+    background: rgba(0,0,0,.35);
+}
+
+.ps-cat-name{
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.ps-section-title{
+    text-transform: uppercase;
+    text-align: center;
+    color: #4B4B4B;
+    font-size: 28px;
+}
+
+#ps_ofert_prod .uk-slider-items,
+#ps_new_prod .uk-slider-items{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#ps_home_promotion .uk-height-large{
+    height: 400px;
+}
+
+#ps_home_promotion .ps-promotion-content{
+    display: block;
+    padding: 30px 40px;
+    background: rgba(0,0,0,.35);
+}
+
+.tm-footer{
+    background-color: #262622;
+}
+
