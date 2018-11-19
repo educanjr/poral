@@ -38,7 +38,9 @@ get_header(); ?>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
     </div>
 </section>
-<section id="ps_provaiders" class="uk-margin">
+
+
+<section id="ps_providers" class="uk-margin">
     <div class="uk-container">
     <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="autoplay: true;">
         <ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-5@m uk-grid">
@@ -107,26 +109,28 @@ get_header(); ?>
     </div>
     </div>
 </section>
+
+
 <section id="ps_categories" class="uk-margin">
     <div class="uk-container-expand">
     <div class="uk-child-width-1-1@s uk-child-width-expand@m uk-text-center uk-dark uk-height-match uk-grid-collapse" uk-grid
          uk-height-match="target: .ps-cat-name">
         <div class="uk-inline uk-padding uk-margin-bottom uk-background-cover uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle"
-             style="background-image: url(<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>);">
+             style="background-image: url(<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>); border: 1px solid #fff;">
             <div class="uk-position-small uk-position-bottom uk-overlay uk-overlay-primary uk-text-center ps-cat-box">
                 <h3 class="ps-cat-name">Griferías</h3>
                 <a class="uk-button uk-button-default" href="#">Ver Más</a>
             </div>
         </div>
         <div class="uk-inline uk-padding uk-margin-bottom uk-background-cover uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle"
-            style="background-image: url(<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>);">
+            style="background-image: url(<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>); border: 1px solid #fff;">
             <div class="uk-position-small uk-position-bottom uk-overlay uk-overlay-primary uk-text-center ps-cat-box">
                 <h3 class="ps-cat-name">Porcelana Sanitaria y Piletas</h3>
                 <a class="uk-button uk-button-default" href="#">Ver Más</a>
             </div>
         </div>
         <div class="uk-inline uk-padding uk-margin-bottom uk-background-cover uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle"
-             style="background-image: url(<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>);">
+             style="background-image: url(<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>); border: 1px solid #fff;">
             <div class="uk-position-small uk-position-bottom uk-overlay uk-overlay-primary uk-text-center ps-cat-box">
                 <h3 class="ps-cat-name">Pisos y Revestimientos</h3>
                 <a class="uk-button uk-button-default" href="#">Ver Más</a>
@@ -139,14 +143,15 @@ get_header(); ?>
 <section id="ps_ofert_prod" class="uk-margin">
     <div class="uk-container uk-text-center">
         <h1 class="uk-heading-primary uk-margin ps-section-title">Productos en Oferta</h1>
-        <div uk-slider>
+        <div uk-slider uk-height-match="target: .uk-card-media-top>img">
             <div class="uk-position-relative">
                 <div class="uk-slider-container uk-light">
                     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
                         <li class="uk-padding-small">
                             <div class="uk-card uk-card-default ps-ofert-prod-item">
                                 <div class="uk-card-media-top">
-                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
+                                    <img src="<?= get_theme_file_uri( '/assets/images/prod01.gif') ?>" alt=""
+                                         style="width: 100%;">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title ps-cat-name">Media Top</h3>
@@ -157,7 +162,8 @@ get_header(); ?>
                         <li class="uk-padding-small ps-ofert-prod-item">
                             <div class="uk-card uk-card-default ps-ofert-prod-item">
                                 <div class="uk-card-media-top">
-                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
+                                    <img src="<?= get_theme_file_uri( '/assets/images/prod02.jpg') ?>" alt=""
+                                         style="width: 100%;">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title ps-cat-name">Media Top</h3>
@@ -168,7 +174,8 @@ get_header(); ?>
                         <li class="uk-padding-small">
                             <div class="uk-card uk-card-default ps-ofert-prod-item">
                                 <div class="uk-card-media-top">
-                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
+                                    <img src="<?= get_theme_file_uri( '/assets/images/prod03.jpg') ?>" alt=""
+                                         style="width: 100%;">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title ps-cat-name">Media Top</h3>
@@ -179,7 +186,8 @@ get_header(); ?>
                         <li class="uk-padding-small">
                             <div class="uk-card uk-card-default ps-ofert-prod-item">
                                 <div class="uk-card-media-top">
-                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
+                                    <img src="<?= get_theme_file_uri( '/assets/images/prod04.jpg') ?>" alt=""
+                                        style="width: 100%;">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title ps-cat-name">Media Top</h3>
@@ -190,62 +198,8 @@ get_header(); ?>
                         <li class="uk-padding-small">
                             <div class="uk-card uk-card-default ps-ofert-prod-item">
                                 <div class="uk-card-media-top">
-                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                    <p>Lorem </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-padding-small">
-                            <div class="uk-card uk-card-default ps-ofert-prod-item">
-                                <div class="uk-card-media-top">
-                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                    <p>Lorem </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-padding-small">
-                            <div class="uk-card uk-card-default ps-ofert-prod-item">
-                                <div class="uk-card-media-top">
-                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                    <p>Lorem </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-padding-small">
-                            <div class="uk-card uk-card-default ps-ofert-prod-item">
-                                <div class="uk-card-media-top">
-                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                    <p>Lorem </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-padding-small">
-                            <div class="uk-card uk-card-default ps-ofert-prod-item">
-                                <div class="uk-card-media-top">
-                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                    <p>Lorem </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-padding-small">
-                            <div class="uk-card uk-card-default ps-ofert-prod-item">
-                                <div class="uk-card-media-top">
-                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
+                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt=""
+                                         style="width: 100%;">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title ps-cat-name">Media Top</h3>
@@ -272,127 +226,77 @@ get_header(); ?>
     </div>
 </section>
 
-    <section id="ps_new_prod" class="uk-margin">
-        <div class="uk-container uk-text-center">
-            <h1 class="uk-heading-primary uk-margin ps-section-title">Nuevos Productos</h1>
-            <div uk-slider>
-                <div class="uk-position-relative">
-                    <div class="uk-slider-container uk-light">
-                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-                            <li class="uk-padding-small">
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                        <p>Lorem </p>
-                                    </div>
+<section id="ps_new_prod" class="uk-margin">
+    <div class="uk-container uk-text-center">
+        <h1 class="uk-heading-primary uk-margin ps-section-title">Nuevos Productos</h1>
+        <div uk-slider uk-height-match="target: .uk-card-media-top>img">
+            <div class="uk-position-relative">
+                <div class="uk-slider-container uk-light">
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                        <li class="uk-padding-small">
+                            <div class="uk-card uk-card-default ps-ofert-prod-item">
+                                <div class="uk-card-media-top">
+                                    <img src="<?= get_theme_file_uri( '/assets/images/prod01.gif') ?>" alt=""
+                                         style="width: 100%;">
                                 </div>
-                            </li>
-                            <li class="uk-padding-small">
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                        <p>Lorem </p>
-                                    </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title ps-cat-name">Media Top</h3>
+                                    <p>Lorem</p>
                                 </div>
-                            </li>
-                            <li class="uk-padding-small">
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                        <p>Lorem </p>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="uk-padding-small ps-ofert-prod-item">
+                            <div class="uk-card uk-card-default ps-ofert-prod-item">
+                                <div class="uk-card-media-top">
+                                    <img src="<?= get_theme_file_uri( '/assets/images/prod02.jpg') ?>" alt=""
+                                         style="width: 100%;">
                                 </div>
-                            </li>
-                            <li class="uk-padding-small">
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                        <p>Lorem </p>
-                                    </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title ps-cat-name">Media Top</h3>
+                                    <p>Lorem </p>
                                 </div>
-                            </li>
-                            <li class="uk-padding-small">
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                        <p>Lorem </p>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="uk-padding-small">
+                            <div class="uk-card uk-card-default ps-ofert-prod-item">
+                                <div class="uk-card-media-top">
+                                    <img src="<?= get_theme_file_uri( '/assets/images/prod03.jpg') ?>" alt=""
+                                         style="width: 100%;">
                                 </div>
-                            </li>
-                            <li class="uk-padding-small">
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                        <p>Lorem </p>
-                                    </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title ps-cat-name">Media Top</h3>
+                                    <p>Lorem </p>
                                 </div>
-                            </li>
-                            <li class="uk-padding-small">
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                        <p>Lorem </p>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="uk-padding-small">
+                            <div class="uk-card uk-card-default ps-ofert-prod-item">
+                                <div class="uk-card-media-top">
+                                    <img src="<?= get_theme_file_uri( '/assets/images/prod04.jpg') ?>" alt=""
+                                         style="width: 100%;">
                                 </div>
-                            </li>
-                            <li class="uk-padding-small">
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                        <p>Lorem </p>
-                                    </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title ps-cat-name">Media Top</h3>
+                                    <p>Lorem </p>
                                 </div>
-                            </li>
-                            <li class="uk-padding-small">
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                        <p>Lorem </p>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="uk-padding-small">
+                            <div class="uk-card uk-card-default ps-ofert-prod-item">
+                                <div class="uk-card-media-top">
+                                    <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt=""
+                                         style="width: 100%;">
                                 </div>
-                            </li>
-                            <li class="uk-padding-small">
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="<?= get_theme_file_uri( '/assets/images/slider-2.jpg') ?>" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title ps-cat-name">Media Top</h3>
-                                        <p>Lorem </p>
-                                    </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title ps-cat-name">Media Top</h3>
+                                    <p>Lorem </p>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 <?php get_footer();

@@ -3,11 +3,12 @@
  * Displays top navigation
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage PoralB2B
  * @since 1.0
  * @version 1.2
  */
 
+$menu_items = wp_get_nav_menu_items('MainMenu');
 ?>
 <div class="tm-header-mobile uk-hidden@m">
     <nav class="uk-navbar-container uk-navbar uk-margin" uk-navbar>
@@ -15,7 +16,7 @@
             <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" uk-toggle="target: #tm-mobile"></a>
         </div>
         <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo" href="#">
+            <a class="uk-navbar-item uk-logo" href="<?= get_site_url() ?>">
                 <img src="<?= get_logo_url() ?>" alt="Poral">
             </a>
         </div>
@@ -23,17 +24,11 @@
     <div id="tm-mobile" class="tm-header" uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar">
             <ul class="uk-nav uk-nav-default">
-                <li class="uk-active"><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li class="uk-parent">
-                    <a href="#">Productos</a>
-                    <ul class="uk-nav-sub">
-                        <li><a href="#">Griferia</a></li>
-                        <li><a href="#">Pisos y revestimientos</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Novedades</a></li>
-                <li><a href="#">Contacto</a></li>
+                <?php foreach ($menu_items as $menu_item) :
+                    $menu_title = $menu_item->title;
+                    $menu_url = $menu_item->url; ?>
+                    <li class="uk-active"><a href="<?= $menu_url ?>"><?= $menu_title ?></a></li>
+                <?php endforeach; ?>
             </ul>
         </div>
     </div>
@@ -45,34 +40,17 @@
             <div class="uk-container">
                 <nav class="uk-navbar" uk-navbar style="position: relative; z-index: 980;">
                     <div class="uk-navbar-left">
-                        <a class="uk-navbar-item uk-logo" href="#">
+                        <a class="uk-navbar-item uk-logo" href="<?= get_site_url() ?>">
                             <img src="<?= get_logo_url() ?>" alt="Poral">
                         </a>
                     </div>
                     <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active">
-                                <a href="#">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="#">Nosotros</a>
-                            </li>
-                            <li>
-                                <a href="#">Productos</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="#">Griferias</a></li>
-                                        <li><a href="#">Pisos y revestimientos</a></li>
-                                        <li><a href="#">Porcelana sanitaria y piletas</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Novedades</a>
-                            </li>
-                            <li>
-                                <a href="#">Contacto</a>
-                            </li>
+                            <?php foreach ($menu_items as $menu_item) :
+                                $menu_title = $menu_item->title;
+                                $menu_url = $menu_item->url; ?>
+                                <li class="uk-active"><a href="<?= $menu_url ?>"><?= $menu_title ?></a></li>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                 </nav>

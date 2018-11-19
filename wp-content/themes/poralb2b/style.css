@@ -32,6 +32,10 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6{
+    font-family: Raleway;
+}
+
 ::selection {
     background: #FF4870;
 }
@@ -206,3 +210,63 @@ html {
     background-color: #262622;
 }
 
+#ps_history{
+    background-color: #EEEEEE;
+    padding: 60px 0;
+}
+
+#ps_history h1{
+    text-transform: uppercase;
+}
+
+#ps_history h3{
+    color:#8A8A8A;
+}
+#ps_history .uk-active h3{
+    color: #4B4B4B;
+}
+
+#ps_products .uk-card{
+    border: 1px solid #CBCBCB;
+}
+
+#ps_breadcrumb{
+    background-color: #000;
+    color: #fff;
+}
+
+#ps_breadcrumb .uk-breadcrumb a,
+#ps_breadcrumb .uk-breadcrumb span{
+    color: #fff;
+    font-size: 18px;
+}
+
+#ps_footer_contact .far,
+#ps_footer_contact .fa {
+    font-size: 25px;
+    color: #fff;
+}
+
+#ps_footer_contact h5,
+#ps_footer_contact p{
+    margin: 0;
+}
+
+#ps_footer_contact h5{
+    text-transform: uppercase;
+    color: #fff;
+}
+#ps_footer_contact p,
+#ps_footer_contact label{
+    color:#BCBCBC;
+}
+
+#ps_footer_contact .uk-flex{
+    border-bottom: 1px solid #707070;
+    padding-bottom: 20px;
+}
+
+#ps_footer_contact .uk-flex:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}

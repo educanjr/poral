@@ -36,75 +36,25 @@ if(!function_exists('add_action')){
     exit;
 }
 
-
-
-class CoDigitalStore
-{
-    public $plugin_name;
-
-    public function __construct()
-    {
-        add_action('init', array($this, 'create_post_types'));
-        $this->plugin_name = plugin_basename(__FILE__);
-    }
-
-    function register(){
-        //admin_enqueue_scripts();
-
-        add_action('admin_menu', array($this, 'add_admin_pages'));
-
-        add_filter("plugin_action_links_$this->plugin_name", array($this, 'setting_link'));
-    }
-
-    function activate(){
-        //$this->create_post_types();
-        flush_rewrite_rules();
-    }
-
-    function deactivate(){
-        flush_rewrite_rules();
-    }
-
-    public function create_post_types(){
-        register_post_type('cds-providers',
-            array(
-                'labels' => array(
-                    'name' => 'Proveedores',
-                    'singular_name' => 'Proveedor'
-                ),
-                'public' => true,
-                'has_archive' => true,
-                'show_in_menu' => 'edit.php'
-            ));
-        //register_post_type('cds_branches', ['public' => 'true', 'label' => 'Marcas']);
-    }
-
-    public function admin_enqueue_scripts(){
-
-    }
-
-    public function add_admin_pages(){
-        add_menu_page('Tienda', 'Tienda', 'manage_options', 'cds_store_settings',
-            array($this, 'store_settings'), 'dashicons-store', 110);
-    }
-
-    public function store_settings(){
-        require_once plugin_dir_path(__FILE__) . 'templates/admin/store_settings.php';
-    }
-
-    public function setting_link($links){
-        $settings = '<a href="admin.php?page=cds_store_settings">Configuración</a>';
-        array_push($links, $settings);
-        return $links;
-    }
+if(file_exists(dirname(__FILE__).'/vendor/autoload.php')){
+    require_once dirname(__FILE__).'/vendor/autoload.php';
 }
 
 
-$coDigitalStore = new CoDigitalStore();
-$coDigitalStore->register();
+use Inc\Base\Activate;
+function cds_activate_plugin(){
+    Activate::activate();
+}
+register_activation_hook(__FILE__, 'cds_activate_plugin');
 
-// activation
-register_activation_hook(__FILE__, array($coDigitalStore, 'activate'));
+use Inc\Base\Deactivate;
+function cds_deactivate_plugin(){
+    Deactivate::deactivate();
+}
+register_deactivation_hook(__FILE__, 'cds_deactivate_plugin');
 
-// deactivation
-register_deactivation_hook(__FILE__, array($coDigitalStore, 'deactivate'));
+
+if (class_exists('Inc\\Init')){
+    Inc\Init::register_services();
+}
+

@@ -1,3 +1,8 @@
 <?php
 ?>
-<h1>CoDigital Store</h1>
+<div class="wrap">
+    <h1>CoDigital Store</h1>
+    <?php settings_errors(); ?>
+
+</div>
+

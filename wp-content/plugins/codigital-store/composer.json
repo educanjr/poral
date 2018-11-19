@@ -1,0 +1,17 @@
+{
+    "name": "codigital/codigital-store",
+    "description": "codigital e-commerce store plugin for wordpress",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "educanjr",
+            "email": "eduardo.canaljunior@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Inc\\": "./Inc"}
+    }
+}
