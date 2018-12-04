@@ -25,6 +25,13 @@ final class Init
         ];
     }
 
+    private static function get_controllers(){
+        return [
+            Controllers\ProviderController::class,
+            Controllers\BranchController::class
+        ];
+    }
+
     /**
      * Register all the classes that have the method register
      */
@@ -40,6 +47,13 @@ final class Init
             $service = self::instantiate($class);
             if(method_exists($service, 'register')){
                 $service->register();
+            }
+        }
+
+        foreach (self::get_controllers() as $class) {
+            $controller = self::instantiate($class);
+            if(method_exists($controller, 'register')){
+                $controller->register();
             }
         }
     }

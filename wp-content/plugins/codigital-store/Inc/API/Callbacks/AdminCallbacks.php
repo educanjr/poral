@@ -23,10 +23,18 @@ class AdminCallbacks extends BaseController
 
     // PRODUCTS MENU SECTION CALLBACKS
     public function admin_products(){
-        return require_once ("$this->plugin_path/templates/admin/store_settings.php");
+        return require_once ("$this->plugin_path/templates/admin/store_products.php");
     }
 
     public function admin_categories(){
-        return require_once ("$this->plugin_path/templates/admin/store_settings.php");
+        return require_once ("$this->plugin_path/templates/admin/store_cat.php");
+    }
+
+    public function admin_providers(){
+        return require_once ("$this->plugin_path/templates/admin/store_providers.php");
+    }
+
+    public function admin_branches(){
+        return require_once ("$this->plugin_path/templates/admin/store_branches.php");
     }
 }

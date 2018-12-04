@@ -1,0 +1,19 @@
+#wpcontent{
+    background-color: #eee;
+}
+.cdg-img-container{
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    float: left;
+    border: 2px dotted rgba(0,0,0,.5);
+}
+
+.cdg-img-container img{
+    display: block;
+}
+
+.uk-card-badge {
+    top: 5px;
+    right: 5px;
+}

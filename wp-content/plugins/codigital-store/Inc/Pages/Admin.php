@@ -49,15 +49,6 @@ class Admin extends BaseController
                 'position' => 110
             ],
             [
-                'page_title' => 'Proveedores',
-                'menu_title' => 'Proveedores',
-                'capability' => 'manage_options',
-                'menu_slug' => 'cds_store_providers',
-                'icon_url' => 'dashicons-store',
-                'callback' => array($this->callbacks, 'admin_providers'),
-                'position' => 10
-            ],
-            [
                 'page_title' => 'Productos',
                 'menu_title' => 'Productos',
                 'capability' => 'manage_options',
@@ -93,12 +84,28 @@ class Admin extends BaseController
                 'callback' => array($this->callbacks, 'admin_slider')
             ],
             [
-                'page_title' => 'Categories',
-                'menu_title' => 'Categories',
+                'page_title' => 'Categorías',
+                'menu_title' => 'Categorías',
                 'parent_slug' => 'cds_store_products',
                 'capability' => 'manage_options',
                 'menu_slug' => 'cds_store_cat',
                 'callback' => array($this->callbacks, 'admin_categories')
+            ],
+            [
+                'page_title' => 'Proveedores',
+                'menu_title' => 'Proveedores',
+                'parent_slug' => 'cds_store_products',
+                'capability' => 'manage_options',
+                'menu_slug' => 'cds_store_providers',
+                'callback' => array($this->callbacks, 'admin_providers')
+            ],
+            [
+                'page_title' => 'Marcas',
+                'menu_title' => 'Marcas',
+                'parent_slug' => 'cds_store_products',
+                'capability' => 'manage_options',
+                'menu_slug' => 'cds_store_branch',
+                'callback' => array($this->callbacks, 'admin_branches')
             ]
         ];
     }
